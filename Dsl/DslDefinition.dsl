@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dsl xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="48e54e0b-f999-4334-8b0a-677deb7d7a67" Description="Description for Company.FamilyTree.FamilyTree" Name="FamilyTree" DisplayName="FamilyTree" Namespace="Company.FamilyTree" ProductName="FamilyTree" CompanyName="Company" PackageGuid="c43d6173-97a5-43dd-a2cb-29146c5c09bd" PackageNamespace="Company.FamilyTree" xmlns="http://schemas.microsoft.com/VisualStudio/2005/DslTools/DslDefinitionModel">
   <Classes>
-    <DomainClass Id="e3d1d856-a96c-4702-9887-44c4f0c5ac3e" Description="The root in which all other elements are embedded. Appears as a diagram." Name="FamilyTreeModel" DisplayName="Family Tree Model" Namespace="Company.FamilyTree">
+    <DomainClass Id="e3d1d856-a96c-4702-9887-44c4f0c5ac3e" Description="The root in which all other elements are embedded. Appears as a diagram." Name="FamilyTreeModel1" DisplayName="Family Tree Model1" Namespace="Company.FamilyTree">
       <ElementMergeDirectives>
         <ElementMergeDirective>
           <Notes>Creates an embedding link when an element is dropped onto a model. </Notes>
@@ -9,7 +9,7 @@
             <DomainClassMoniker Name="Person" />
           </Index>
           <LinkCreationPaths>
-            <DomainPath>FamilyTreeModelHasPeople.People</DomainPath>
+            <DomainPath>FamilyTreeModel1HasPeople.People</DomainPath>
           </LinkCreationPaths>
         </ElementMergeDirective>
         <ElementMergeDirective>
@@ -17,7 +17,7 @@
             <DomainClassMoniker Name="Town" />
           </Index>
           <LinkCreationPaths>
-            <DomainPath>FamilyTreeModelHasTowns.Towns</DomainPath>
+            <DomainPath>FamilyTreeModel1HasTowns.Towns</DomainPath>
           </LinkCreationPaths>
         </ElementMergeDirective>
         <ElementMergeDirective>
@@ -25,7 +25,7 @@
             <DomainClassMoniker Name="Nationality" />
           </Index>
           <LinkCreationPaths>
-            <DomainPath>FamilyTreeModelHasNationalities.Nationalities</DomainPath>
+            <DomainPath>FamilyTreeModel1HasNationalities.Nationalities</DomainPath>
           </LinkCreationPaths>
         </ElementMergeDirective>
       </ElementMergeDirectives>
@@ -69,16 +69,16 @@
     </DomainClass>
   </Classes>
   <Relationships>
-    <DomainRelationship Id="a9a7b929-6ed7-4362-ba59-dd04719c5d64" Description="Embedding relationship between the Model and Elements" Name="FamilyTreeModelHasPeople" DisplayName="Family Tree Model Has People" Namespace="Company.FamilyTree" IsEmbedding="true">
+    <DomainRelationship Id="a9a7b929-6ed7-4362-ba59-dd04719c5d64" Description="Embedding relationship between the Model and Elements" Name="FamilyTreeModel1HasPeople" DisplayName="Family Tree Model1 Has People" Namespace="Company.FamilyTree" IsEmbedding="true">
       <Source>
-        <DomainRole Id="90bd59b9-3c89-4468-ac10-f41b6987ec8a" Description="" Name="FamilyTreeModel" DisplayName="Family Tree Model" PropertyName="People" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="People">
+        <DomainRole Id="90bd59b9-3c89-4468-ac10-f41b6987ec8a" Description="" Name="FamilyTreeModel1" DisplayName="Family Tree Model1" PropertyName="People" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="People">
           <RolePlayer>
-            <DomainClassMoniker Name="FamilyTreeModel" />
+            <DomainClassMoniker Name="FamilyTreeModel1" />
           </RolePlayer>
         </DomainRole>
       </Source>
       <Target>
-        <DomainRole Id="180cda13-6e6b-451e-8796-72e0739e6a23" Description="" Name="Element" DisplayName="Element" PropertyName="FamilyTreeModel" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Family Tree Model">
+        <DomainRole Id="180cda13-6e6b-451e-8796-72e0739e6a23" Description="" Name="Element" DisplayName="Element" PropertyName="FamilyTreeModel1" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Family Tree Model1">
           <RolePlayer>
             <DomainClassMoniker Name="Person" />
           </RolePlayer>
@@ -101,16 +101,16 @@
         </DomainRole>
       </Target>
     </DomainRelationship>
-    <DomainRelationship Id="a541dbe1-3b7e-4d08-817c-398fb7281760" Description="Description for Company.FamilyTree.FamilyTreeModelHasTowns" Name="FamilyTreeModelHasTowns" DisplayName="Family Tree Model Has Towns" Namespace="Company.FamilyTree" IsEmbedding="true">
+    <DomainRelationship Id="a541dbe1-3b7e-4d08-817c-398fb7281760" Description="Description for Company.FamilyTree.FamilyTreeModel1HasTowns" Name="FamilyTreeModel1HasTowns" DisplayName="Family Tree Model1 Has Towns" Namespace="Company.FamilyTree" IsEmbedding="true">
       <Source>
-        <DomainRole Id="8a6d92a9-cf70-42d4-9931-d8eaffcfa407" Description="Description for Company.FamilyTree.FamilyTreeModelHasTowns.FamilyTreeModel" Name="FamilyTreeModel" DisplayName="Family Tree Model" PropertyName="Towns" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Towns">
+        <DomainRole Id="8a6d92a9-cf70-42d4-9931-d8eaffcfa407" Description="Description for Company.FamilyTree.FamilyTreeModel1HasTowns.FamilyTreeModel1" Name="FamilyTreeModel1" DisplayName="Family Tree Model1" PropertyName="Towns" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Towns">
           <RolePlayer>
-            <DomainClassMoniker Name="FamilyTreeModel" />
+            <DomainClassMoniker Name="FamilyTreeModel1" />
           </RolePlayer>
         </DomainRole>
       </Source>
       <Target>
-        <DomainRole Id="92a058d5-0a36-47da-9df1-cffe92be1e42" Description="Description for Company.FamilyTree.FamilyTreeModelHasTowns.Town" Name="Town" DisplayName="Town" PropertyName="FamilyTreeModel" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Family Tree Model">
+        <DomainRole Id="92a058d5-0a36-47da-9df1-cffe92be1e42" Description="Description for Company.FamilyTree.FamilyTreeModel1HasTowns.Town" Name="Town" DisplayName="Town" PropertyName="FamilyTreeModel1" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Family Tree Model1">
           <RolePlayer>
             <DomainClassMoniker Name="Town" />
           </RolePlayer>
@@ -133,16 +133,16 @@
         </DomainRole>
       </Target>
     </DomainRelationship>
-    <DomainRelationship Id="8e41d523-38f9-4887-ad87-9acc8f1fcd78" Description="Description for Company.FamilyTree.FamilyTreeModelHasNationalities" Name="FamilyTreeModelHasNationalities" DisplayName="Family Tree Model Has Nationalities" Namespace="Company.FamilyTree" IsEmbedding="true">
+    <DomainRelationship Id="8e41d523-38f9-4887-ad87-9acc8f1fcd78" Description="Description for Company.FamilyTree.FamilyTreeModel1HasNationalities" Name="FamilyTreeModel1HasNationalities" DisplayName="Family Tree Model1 Has Nationalities" Namespace="Company.FamilyTree" IsEmbedding="true">
       <Source>
-        <DomainRole Id="3dde5e62-bd84-43f3-86ec-42d06985d517" Description="Description for Company.FamilyTree.FamilyTreeModelHasNationalities.FamilyTreeModel" Name="FamilyTreeModel" DisplayName="Family Tree Model" PropertyName="Nationalities" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Nationalities">
+        <DomainRole Id="3dde5e62-bd84-43f3-86ec-42d06985d517" Description="Description for Company.FamilyTree.FamilyTreeModel1HasNationalities.FamilyTreeModel1" Name="FamilyTreeModel1" DisplayName="Family Tree Model1" PropertyName="Nationalities" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Nationalities">
           <RolePlayer>
-            <DomainClassMoniker Name="FamilyTreeModel" />
+            <DomainClassMoniker Name="FamilyTreeModel1" />
           </RolePlayer>
         </DomainRole>
       </Source>
       <Target>
-        <DomainRole Id="b11ca844-ee54-4442-97fc-cf843b228b19" Description="Description for Company.FamilyTree.FamilyTreeModelHasNationalities.Nationality" Name="Nationality" DisplayName="Nationality" PropertyName="FamilyTreeModel" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Family Tree Model">
+        <DomainRole Id="b11ca844-ee54-4442-97fc-cf843b228b19" Description="Description for Company.FamilyTree.FamilyTreeModel1HasNationalities.Nationality" Name="Nationality" DisplayName="Nationality" PropertyName="FamilyTreeModel1" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Family Tree Model1">
           <RolePlayer>
             <DomainClassMoniker Name="Nationality" />
           </RolePlayer>
@@ -214,17 +214,17 @@
   </Connectors>
   <XmlSerializationBehavior Name="FamilyTreeSerializationBehavior" Namespace="Company.FamilyTree">
     <ClassData>
-      <XmlClassData TypeName="FamilyTreeModel" MonikerAttributeName="" SerializeId="true" MonikerElementName="familyTreeModelMoniker" ElementName="familyTreeModel" MonikerTypeName="FamilyTreeModelMoniker">
-        <DomainClassMoniker Name="FamilyTreeModel" />
+      <XmlClassData TypeName="FamilyTreeModel1" MonikerAttributeName="" SerializeId="true" MonikerElementName="familyTreeModel1Moniker" ElementName="familyTreeModel1" MonikerTypeName="FamilyTreeModel1Moniker">
+        <DomainClassMoniker Name="FamilyTreeModel1" />
         <ElementData>
           <XmlRelationshipData RoleElementName="people">
-            <DomainRelationshipMoniker Name="FamilyTreeModelHasPeople" />
+            <DomainRelationshipMoniker Name="FamilyTreeModel1HasPeople" />
           </XmlRelationshipData>
           <XmlRelationshipData UseFullForm="true" RoleElementName="towns">
-            <DomainRelationshipMoniker Name="FamilyTreeModelHasTowns" />
+            <DomainRelationshipMoniker Name="FamilyTreeModel1HasTowns" />
           </XmlRelationshipData>
           <XmlRelationshipData UseFullForm="true" RoleElementName="nationalities">
-            <DomainRelationshipMoniker Name="FamilyTreeModelHasNationalities" />
+            <DomainRelationshipMoniker Name="FamilyTreeModel1HasNationalities" />
           </XmlRelationshipData>
         </ElementData>
       </XmlClassData>
@@ -245,8 +245,8 @@
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>
-      <XmlClassData TypeName="FamilyTreeModelHasPeople" MonikerAttributeName="" SerializeId="true" MonikerElementName="familyTreeModelHasPeopleMoniker" ElementName="familyTreeModelHasPeople" MonikerTypeName="FamilyTreeModelHasPeopleMoniker">
-        <DomainRelationshipMoniker Name="FamilyTreeModelHasPeople" />
+      <XmlClassData TypeName="FamilyTreeModel1HasPeople" MonikerAttributeName="" SerializeId="true" MonikerElementName="familyTreeModel1HasPeopleMoniker" ElementName="familyTreeModel1HasPeople" MonikerTypeName="FamilyTreeModel1HasPeopleMoniker">
+        <DomainRelationshipMoniker Name="FamilyTreeModel1HasPeople" />
       </XmlClassData>
       <XmlClassData TypeName="PersonReferencesChildren" MonikerAttributeName="" SerializeId="true" MonikerElementName="personReferencesChildrenMoniker" ElementName="personReferencesChildren" MonikerTypeName="PersonReferencesChildrenMoniker">
         <DomainRelationshipMoniker Name="PersonReferencesChildren" />
@@ -260,8 +260,8 @@
       <XmlClassData TypeName="FamilyTreeDiagram" MonikerAttributeName="" SerializeId="true" MonikerElementName="familyTreeDiagramMoniker" ElementName="familyTreeDiagram" MonikerTypeName="FamilyTreeDiagramMoniker">
         <DiagramMoniker Name="FamilyTreeDiagram" />
       </XmlClassData>
-      <XmlClassData TypeName="FamilyTreeModelHasTowns" MonikerAttributeName="" SerializeId="true" MonikerElementName="familyTreeModelHasTownsMoniker" ElementName="familyTreeModelHasTowns" MonikerTypeName="FamilyTreeModelHasTownsMoniker">
-        <DomainRelationshipMoniker Name="FamilyTreeModelHasTowns" />
+      <XmlClassData TypeName="FamilyTreeModel1HasTowns" MonikerAttributeName="" SerializeId="true" MonikerElementName="familyTreeModel1HasTownsMoniker" ElementName="familyTreeModel1HasTowns" MonikerTypeName="FamilyTreeModel1HasTownsMoniker">
+        <DomainRelationshipMoniker Name="FamilyTreeModel1HasTowns" />
       </XmlClassData>
       <XmlClassData TypeName="Town" MonikerAttributeName="" SerializeId="true" MonikerElementName="townMoniker" ElementName="town" MonikerTypeName="TownMoniker">
         <DomainClassMoniker Name="Town" />
@@ -283,8 +283,8 @@
       <XmlClassData TypeName="TownConnector" MonikerAttributeName="" SerializeId="true" MonikerElementName="townConnectorMoniker" ElementName="townConnector" MonikerTypeName="TownConnectorMoniker">
         <ConnectorMoniker Name="TownConnector" />
       </XmlClassData>
-      <XmlClassData TypeName="FamilyTreeModelHasNationalities" MonikerAttributeName="" SerializeId="true" MonikerElementName="familyTreeModelHasNationalitiesMoniker" ElementName="familyTreeModelHasNationalities" MonikerTypeName="FamilyTreeModelHasNationalitiesMoniker">
-        <DomainRelationshipMoniker Name="FamilyTreeModelHasNationalities" />
+      <XmlClassData TypeName="FamilyTreeModel1HasNationalities" MonikerAttributeName="" SerializeId="true" MonikerElementName="familyTreeModel1HasNationalitiesMoniker" ElementName="familyTreeModel1HasNationalities" MonikerTypeName="FamilyTreeModel1HasNationalitiesMoniker">
+        <DomainRelationshipMoniker Name="FamilyTreeModel1HasNationalities" />
       </XmlClassData>
       <XmlClassData TypeName="Nationality" MonikerAttributeName="" SerializeId="true" MonikerElementName="nationalityMoniker" ElementName="nationality" MonikerTypeName="NationalityMoniker">
         <DomainClassMoniker Name="Nationality" />
@@ -371,13 +371,13 @@
   </ConnectionBuilders>
   <Diagram Id="f751ddd3-8ffb-4a30-9733-d6086bdd582e" Description="Description for Company.FamilyTree.FamilyTreeDiagram" Name="FamilyTreeDiagram" DisplayName="Minimal Language Diagram" Namespace="Company.FamilyTree">
     <Class>
-      <DomainClassMoniker Name="FamilyTreeModel" />
+      <DomainClassMoniker Name="FamilyTreeModel1" />
     </Class>
     <ShapeMaps>
       <ShapeMap>
         <DomainClassMoniker Name="Person" />
         <ParentElementPath>
-          <DomainPath>FamilyTreeModelHasPeople.FamilyTreeModel/!FamilyTreeModel</DomainPath>
+          <DomainPath>FamilyTreeModel1HasPeople.FamilyTreeModel1/!FamilyTreeModel1</DomainPath>
         </ParentElementPath>
         <DecoratorMap>
           <TextDecoratorMoniker Name="ExampleShape/NameDecorator" />
@@ -408,7 +408,7 @@
       <ShapeMap>
         <DomainClassMoniker Name="Town" />
         <ParentElementPath>
-          <DomainPath>FamilyTreeModelHasTowns.FamilyTreeModel/!FamilyTreeModel</DomainPath>
+          <DomainPath>FamilyTreeModel1HasTowns.FamilyTreeModel1/!FamilyTreeModel1</DomainPath>
         </ParentElementPath>
         <DecoratorMap>
           <TextDecoratorMoniker Name="TownShape/NameDecorator" />
@@ -423,7 +423,7 @@
       <ShapeMap>
         <DomainClassMoniker Name="Nationality" />
         <ParentElementPath>
-          <DomainPath>FamilyTreeModelHasNationalities.FamilyTreeModel/!FamilyTreeModel</DomainPath>
+          <DomainPath>FamilyTreeModel1HasNationalities.FamilyTreeModel1/!FamilyTreeModel1</DomainPath>
         </ParentElementPath>
         <DecoratorMap>
           <TextDecoratorMoniker Name="NationalityShape/NameDecorator" />
@@ -453,7 +453,7 @@
   </Diagram>
   <Designer CopyPasteGeneration="CopyPasteOnly" FileExtension="mydsl1" EditorGuid="0e496977-77cb-49b5-9678-4e74c9138360">
     <RootClass>
-      <DomainClassMoniker Name="FamilyTreeModel" />
+      <DomainClassMoniker Name="FamilyTreeModel1" />
     </RootClass>
     <XmlSerializationDefinition CustomPostLoad="false">
       <XmlSerializationBehaviorMoniker Name="FamilyTreeSerializationBehavior" />
