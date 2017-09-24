@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<familyTreeDiagram dslVersion="1.0.0.0" Id="38c2403d-4d80-4996-807a-9913589173e4" absoluteBounds="0, 0, 11, 8.5" name="Sample">
+  <familyTreeModelMoniker Id="e06cec45-0847-483e-afae-c8474d97597d" />
+  <nestedChildShapes>
+    <exampleShape Id="43dfb67a-3ce2-443d-83c7-b94fc4a99f3e" absoluteBounds="0.5, 2.25, 2, 0.75" />
+    <exampleShape Id="1485f65e-0e7c-480d-b8f4-63f8de4f285c" absoluteBounds="2.625, 1.875, 2, 0.75" />
+    <exampleShape Id="39273709-5fd1-47e9-b6f9-75b8c18ecdd8" absoluteBounds="0.75, 0.5, 2, 0.75">
+      <personMoniker name="/e06cec45-0847-483e-afae-c8474d97597d/Henry VIII" />
+    </exampleShape>
+    <exampleShape Id="b330b78a-ef05-4b94-b010-d6c989ddcf47" absoluteBounds="3.75, 0.5, 2, 0.75">
+      <personMoniker name="/e06cec45-0847-483e-afae-c8474d97597d/Elizabeth I" />
+    </exampleShape>
+    <exampleShape Id="c1efac00-184d-4fef-b7dd-546a627ea0ff" absoluteBounds="5.5, 1.5, 2, 0.75">
+      <personMoniker name="/e06cec45-0847-483e-afae-c8474d97597d/Mary" />
+    </exampleShape>
+    <exampleConnector Id="b8b204be-ee90-486a-8557-b24f0229b8a5" edgePoints="[(2.75 : 0.875); (3.75 : 0.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="6e9b7214-4cbf-430a-ad02-89badf30079e">
+      <nodes>
+        <exampleShapeMoniker Id="39273709-5fd1-47e9-b6f9-75b8c18ecdd8" />
+        <exampleShapeMoniker Id="b330b78a-ef05-4b94-b010-d6c989ddcf47" />
+      </nodes>
+    </exampleConnector>
+    <exampleConnector Id="ee9ca618-bc2c-4123-bca1-8abe2f0b3497" edgePoints="[(1.65625 : 1.25); (1.65625 : 1.65625); (5.5 : 1.65625)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="6e9b7214-4cbf-430a-ad02-89badf30079e">
+      <nodes>
+        <exampleShapeMoniker Id="39273709-5fd1-47e9-b6f9-75b8c18ecdd8" />
+        <exampleShapeMoniker Id="c1efac00-184d-4fef-b7dd-546a627ea0ff" />
+      </nodes>
+    </exampleConnector>
+    <townShape Id="bb362334-7e15-4d72-8fff-54004b3ee9c8" absoluteBounds="5.625, 3.875, 1.5, 1">
+      <townMoniker Id="88233bb9-d4ea-4fcd-938a-3225975475cd" />
+    </townShape>
+    <nationalityShape Id="96fe75df-68b2-44b2-b5ae-d1fc44d9f68c" absoluteBounds="3, 3.625, 1.5, 1">
+      <nationalityMoniker Id="cfc11998-3cde-411c-8ec3-a5af9919a4bc" />
+    </nationalityShape>
+  </nestedChildShapes>
+</familyTreeDiagram>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<familyTreeModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="4b73f606-1129-4473-b32f-ef05305187bd" xmlns="http://schemas.microsoft.com/dsltools/FamilyTree">
+  <people>
+    <person Id="801cbc6e-3448-4aa3-83e8-00b0e1ad63ee" name="Laura Gudiev" birthYear="1964" deathYear="0" />
+    <person Id="f613fe55-2d52-403c-b3dc-d689e5f1463f" name="Artur Gudiev" birthYear="1993" deathYear="0">
+      <children>
+        <personMoniker name="/4b73f606-1129-4473-b32f-ef05305187bd/Laura Gudiev" />
+        <personMoniker name="/4b73f606-1129-4473-b32f-ef05305187bd/Vova Gudiev" />
+      </children>
+    </person>
+    <person Id="6aea6d39-28b0-4727-8a6a-0462ba6fdcc6" name="Vova Gudiev" birthYear="1959" deathYear="0" />
+    <person Id="07d6a484-78f0-49eb-a56a-b397a1cc264f" name="Alan Gudiev" birthYear="1988" deathYear="0">
+      <children>
+        <personMoniker name="/4b73f606-1129-4473-b32f-ef05305187bd/Laura Gudiev" />
+        <personMoniker name="/4b73f606-1129-4473-b32f-ef05305187bd/Vova Gudiev" />
+      </children>
+    </person>
+  </people>
+  <towns>
+    <familyTreeModelHasTowns Id="69aa9378-70f7-40f4-b336-be6e4171eaca">
+      <town Id="4743665f-350a-47c2-b72b-b690716cb978" name="Vladikavkaz">
+        <residents>
+          <residence Id="22bd11c6-bea5-40f8-92cc-fe91b02248d5">
+            <personMoniker name="/4b73f606-1129-4473-b32f-ef05305187bd/Vova Gudiev" />
+          </residence>
+          <residence Id="3560ad1c-2535-4d4c-98d7-2ad7990b1ab2">
+            <personMoniker name="/4b73f606-1129-4473-b32f-ef05305187bd/Alan Gudiev" />
+          </residence>
+          <residence Id="e3d49246-068c-4d5c-97e5-8a4c60e299ed">
+            <personMoniker name="/4b73f606-1129-4473-b32f-ef05305187bd/Laura Gudiev" />
+          </residence>
+        </residents>
+      </town>
+    </familyTreeModelHasTowns>
+    <familyTreeModelHasTowns Id="2c3f4c36-8160-4d40-982f-7f72144c3825">
+      <town Id="01249362-0270-4e65-b093-c3b42bd6c5ef" name="SPb">
+        <residents>
+          <residence Id="1bcf41bb-8390-41f8-b4e1-96997a82d42f">
+            <personMoniker name="/4b73f606-1129-4473-b32f-ef05305187bd/Artur Gudiev" />
+          </residence>
+        </residents>
+      </town>
+    </familyTreeModelHasTowns>
+  </towns>
+  <nationalities>
+    <familyTreeModelHasNationalities Id="fb235670-c8da-4788-b5e9-46a485d31679">
+      <nationality Id="0d226068-3c00-438b-aa9d-b25205c0ec57" name="Ossetian">
+        <persons>
+          <nationalityReferencesPersons Id="1946ca27-9c29-4ca0-bac0-0aa008a1fe65">
+            <personMoniker name="/4b73f606-1129-4473-b32f-ef05305187bd/Alan Gudiev" />
+          </nationalityReferencesPersons>
+          <nationalityReferencesPersons Id="a9660de4-cca6-4969-8569-fad4251df880">
+            <personMoniker name="/4b73f606-1129-4473-b32f-ef05305187bd/Artur Gudiev" />
+          </nationalityReferencesPersons>
+          <nationalityReferencesPersons Id="8c0e6ffa-4c95-4a80-abee-33e2b1119942">
+            <personMoniker name="/4b73f606-1129-4473-b32f-ef05305187bd/Vova Gudiev" />
+          </nationalityReferencesPersons>
+          <nationalityReferencesPersons Id="7c167607-d89c-4c78-b521-fbb856c5f237">
+            <personMoniker name="/4b73f606-1129-4473-b32f-ef05305187bd/Laura Gudiev" />
+          </nationalityReferencesPersons>
+        </persons>
+      </nationality>
+    </familyTreeModelHasNationalities>
+  </nationalities>
+</familyTreeModel>

@@ -1,0 +1,21 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ output extension=".txt" #>
+<#@ FamilyTree processor="FamilyTreeDirectiveProcessor" requires="fileName='Test.mydsl1'" #>
+
+Generated material. Generating code in C#.
+
+<#  
+  foreach (Person person in this.FamilyTreeModel.People)  
+  {  
+#>  
+    <#= person.Name #> <#= person.BirthYear #> <#if (person.Town != null) {#> of <#= person.Town.Name #> <#}#>  
+	here
+<#  
+      foreach (Person child in person.Children)  
+  {  
+#>  
+            <#= child.Name #>  
+<#  
+  }  
+  }  
+#>

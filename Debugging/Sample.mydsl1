@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<familyTreeModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e06cec45-0847-483e-afae-c8474d97597d" xmlns="http://schemas.microsoft.com/dsltools/FamilyTree">
+  <people>
+    <person Id="c1140f66-400e-4a2f-9184-b83cbca2e373" name="Henry VIII" birthYear="1491" deathYear="1547">
+      <children>
+        <personMoniker name="/e06cec45-0847-483e-afae-c8474d97597d/Elizabeth I" />
+        <personMoniker name="/e06cec45-0847-483e-afae-c8474d97597d/Mary" />
+      </children>
+    </person>
+    <person Id="74545288-054f-419d-b255-18390f87dbf0" name="Elizabeth I" birthYear="1533" deathYear="1603" />
+    <person Id="93901fed-7d11-4471-99dc-3c513efc0de9" name="Mary" birthYear="1533" deathYear="1558" />
+  </people>
+  <towns>
+    <familyTreeModelHasTowns Id="6b782c88-223b-45df-bf16-7eea34ee6bd9">
+      <town Id="88233bb9-d4ea-4fcd-938a-3225975475cd" name="Moscow" />
+    </familyTreeModelHasTowns>
+  </towns>
+  <nationalities>
+    <familyTreeModelHasNationalities Id="f5190325-62a9-4601-84c4-fbb659f3c5b3">
+      <nationality Id="cfc11998-3cde-411c-8ec3-a5af9919a4bc" />
+    </familyTreeModelHasNationalities>
+  </nationalities>
+</familyTreeModel>

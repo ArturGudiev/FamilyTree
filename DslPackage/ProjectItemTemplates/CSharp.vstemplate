@@ -1,0 +1,17 @@
+﻿<!--DSL Tools Language Template-->
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TemplateData>
+		<TemplateID>{8ef453de-c61d-4652-9c0c-9ce5264126a6}</TemplateID>
+		<Name Package="{c43d6173-97a5-43dd-a2cb-29146c5c09bd}" ID="103"/>
+		<Description Package="{c43d6173-97a5-43dd-a2cb-29146c5c09bd}" ID="102"/>
+		<Icon Package="{c43d6173-97a5-43dd-a2cb-29146c5c09bd}" ID="201" />
+		<ProjectType>CSharp</ProjectType>
+		<SortOrder>360</SortOrder>
+		<DefaultName>FamilyTree.mydsl1</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectItem TargetFileName="$fileinputname$.mydsl1">mydsl1.mydsl1</ProjectItem>
+		<ProjectItem TargetFileName="$fileinputname$.mydsl1.diagram">mydsl1.diagram</ProjectItem>
+	</TemplateContent>
+</VSTemplate>
+
