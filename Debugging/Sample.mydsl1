@@ -20,4 +20,9 @@
       <nationality Id="cfc11998-3cde-411c-8ec3-a5af9919a4bc" />
     </familyTreeModelHasNationalities>
   </nationalities>
+  <domainClass1>
+    <familyTreeModelHasDomainClass1 Id="263958e7-4184-41db-b7a2-d16f77550b3b">
+      <domainClass1 Id="4cd75dac-b6be-4316-9665-bf2d03ec7b40" />
+    </familyTreeModelHasDomainClass1>
+  </domainClass1>
 </familyTreeModel>
