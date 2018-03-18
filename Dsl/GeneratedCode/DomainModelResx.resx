@@ -165,6 +165,14 @@
     <value>Death Year</value>
     <comment>DisplayName for DomainProperty &apos;DeathYear&apos; on DomainClass &apos;Person&apos;</comment>
   </data>
+  <data name="Company.FamilyTree.Person/Male.Description" xml:space="preserve">
+    <value>Description for Company.FamilyTree.Person.Male</value>
+    <comment>Description for DomainProperty &apos;Male&apos; on DomainClass &apos;Person&apos;</comment>
+  </data>
+  <data name="Company.FamilyTree.Person/Male.DisplayName" xml:space="preserve">
+    <value>Male</value>
+    <comment>DisplayName for DomainProperty &apos;Male&apos; on DomainClass &apos;Person&apos;</comment>
+  </data>
   <data name="Company.FamilyTree.Town.Description" xml:space="preserve">
     <value>Description for Company.FamilyTree.Town</value>
     <comment>Description for DomainClass &apos;Town&apos;</comment>
@@ -650,6 +658,14 @@ A DomainClass can be serialized as a moniker only if
     <comment>Message when validation errors are found on save that will cause file to become unloadable</comment>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ExampleShapeFemaleIconDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\female.bmp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Icon decorator default image</comment>
+  </data>
+  <data name="ExampleShapeMaleIconDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\gender.bmp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Icon decorator default image</comment>
+  </data>
   <data name="Person2ToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
     <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>

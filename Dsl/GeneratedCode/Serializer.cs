@@ -1130,6 +1130,23 @@ namespace Company.FamilyTree
 					}
 				}
 			}
+			// Male
+			if (!serializationContext.Result.Failed)
+			{
+				string attribMale = FamilyTreeSerializationHelper.Instance.ReadAttribute(serializationContext, element, reader, "male");
+				if (attribMale != null)
+				{
+					global::System.Boolean valueOfMale;
+					if (DslModeling::SerializationUtilities.TryGetValue<global::System.Boolean>(serializationContext, attribMale, out valueOfMale))
+					{
+						instanceOfPerson.Male = valueOfMale;
+					}
+					else
+					{	// Invalid property value, ignored.
+						FamilyTreeSerializationBehaviorSerializationMessages.IgnoredPropertyValue(serializationContext, reader, "male", typeof(global::System.Boolean), attribMale);
+					}
+				}
+			}
 		}
 	
 		/// <summary>
@@ -1659,6 +1676,16 @@ namespace Company.FamilyTree
 				if (!serializationContext.Result.Failed)
 				{
 					FamilyTreeSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "deathYear", serializedPropValue);
+				}
+			}
+			// Male
+			if (!serializationContext.Result.Failed)
+			{
+				global::System.Boolean propValue = instanceOfPerson.Male;
+				string serializedPropValue = DslModeling::SerializationUtilities.GetString<global::System.Boolean>(serializationContext, propValue);
+				if (!serializationContext.Result.Failed)
+				{
+					FamilyTreeSerializationHelper.Instance.WriteAttributeString(serializationContext, element, writer, "male", serializedPropValue);
 				}
 			}
 		}

@@ -100,6 +100,7 @@ namespace Company.FamilyTree
 				new DomainMemberInfo(typeof(Person), "Name", Person.NameDomainPropertyId, typeof(Person.NamePropertyHandler)),
 				new DomainMemberInfo(typeof(Person), "BirthYear", Person.BirthYearDomainPropertyId, typeof(Person.BirthYearPropertyHandler)),
 				new DomainMemberInfo(typeof(Person), "DeathYear", Person.DeathYearDomainPropertyId, typeof(Person.DeathYearPropertyHandler)),
+				new DomainMemberInfo(typeof(Person), "Male", Person.MaleDomainPropertyId, typeof(Person.MalePropertyHandler)),
 				new DomainMemberInfo(typeof(Town), "Name", Town.NameDomainPropertyId, typeof(Town.NamePropertyHandler)),
 				new DomainMemberInfo(typeof(Nationality), "Name", Nationality.NameDomainPropertyId, typeof(Nationality.NamePropertyHandler)),
 			};

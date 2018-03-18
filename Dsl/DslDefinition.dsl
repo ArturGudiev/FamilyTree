@@ -47,6 +47,11 @@
             <ExternalTypeMoniker Name="/System/Int32" />
           </Type>
         </DomainProperty>
+        <DomainProperty Id="f954a0aa-20f0-49c6-844d-e35da02d5c83" Description="Description for Company.FamilyTree.Person.Male" Name="Male" DisplayName="Male">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Boolean" />
+          </Type>
+        </DomainProperty>
       </Properties>
     </DomainClass>
     <DomainClass Id="4eb9e2ce-e785-4b48-8c4d-4e80d9eeb831" Description="Description for Company.FamilyTree.Town" Name="Town" DisplayName="Town" Namespace="Company.FamilyTree">
@@ -195,6 +200,12 @@
       <ShapeHasDecorators Position="InnerBottomLeft" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="BirthDecorator" DisplayName="Birth Decorator" DefaultText="BirthDecorator" />
       </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopRight" HorizontalOffset="0" VerticalOffset="0">
+        <IconDecorator Name="FemaleIcon" DisplayName="Female Icon" DefaultIcon="Resources\female.bmp" />
+      </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerTopRight" HorizontalOffset="0" VerticalOffset="0">
+        <IconDecorator Name="MaleIcon" DisplayName="Male Icon" DefaultIcon="Resources\gender.bmp" />
+      </ShapeHasDecorators>
     </GeometryShape>
     <GeometryShape Id="9e12eae0-2fd1-4fe9-b975-32b01ff4b84b" Description="Description for Company.FamilyTree.TownShape" Name="TownShape" DisplayName="Town Shape" Namespace="Company.FamilyTree" FixedTooltipText="Town Shape" FillColor="Red" InitialHeight="1" Geometry="Ellipse">
       <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
@@ -242,6 +253,9 @@
           </XmlPropertyData>
           <XmlPropertyData XmlName="deathYear">
             <DomainPropertyMoniker Name="Person/DeathYear" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="male">
+            <DomainPropertyMoniker Name="Person/Male" />
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>
@@ -402,6 +416,24 @@
               <DomainPropertyMoniker Name="Person/BirthYear" />
             </PropertyPath>
           </PropertyDisplayed>
+        </DecoratorMap>
+        <DecoratorMap>
+          <IconDecoratorMoniker Name="ExampleShape/FemaleIcon" />
+          <VisibilityPropertyPath>
+            <DomainPropertyMoniker Name="Person/Male" />
+            <PropertyFilters>
+              <PropertyFilter FilteringValue="False" />
+            </PropertyFilters>
+          </VisibilityPropertyPath>
+        </DecoratorMap>
+        <DecoratorMap>
+          <IconDecoratorMoniker Name="ExampleShape/MaleIcon" />
+          <VisibilityPropertyPath>
+            <DomainPropertyMoniker Name="Person/Male" />
+            <PropertyFilters>
+              <PropertyFilter FilteringValue="True" />
+            </PropertyFilters>
+          </VisibilityPropertyPath>
         </DecoratorMap>
         <GeometryShapeMoniker Name="ExampleShape" />
       </ShapeMap>

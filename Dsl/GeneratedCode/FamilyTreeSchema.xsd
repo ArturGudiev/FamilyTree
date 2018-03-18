@@ -140,6 +140,8 @@
         <xsd:attribute name="birthYear" type="xsd:integer" />
         <!-- Property: DeathYear -->
         <xsd:attribute name="deathYear" type="xsd:integer" />
+        <!-- Property: Male -->
+        <xsd:attribute name="male" type="xsd:boolean" />
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>

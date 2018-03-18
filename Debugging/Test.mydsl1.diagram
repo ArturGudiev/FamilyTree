@@ -8,7 +8,7 @@
     <exampleShape Id="cc84058d-a6a6-4ad5-88e9-1a74fe405672" absoluteBounds="1.5, 2.375, 1.25, 0.75">
       <personMoniker name="/4b73f606-1129-4473-b32f-ef05305187bd/Artur Gudiev" />
     </exampleShape>
-    <exampleConnector Id="82eeb328-7cc9-4fe2-912b-5d3a9c977b6d" edgePoints="[(2.25 : 2.375); (2.25 : 1.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="6e9b7214-4cbf-430a-ad02-89badf30079e">
+    <exampleConnector Id="82eeb328-7cc9-4fe2-912b-5d3a9c977b6d" edgePoints="[(2.25 : 2.375); (2.25 : 1.375)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="6e9b7214-4cbf-430a-ad02-89badf30079e">
       <nodes>
         <exampleShapeMoniker Id="cc84058d-a6a6-4ad5-88e9-1a74fe405672" />
         <exampleShapeMoniker Id="71013da8-089c-4295-b625-0815cfe4b871" />
@@ -20,19 +20,19 @@
     <exampleShape Id="1803d0b6-f6f8-4761-aeaf-273e4597ede4" absoluteBounds="5.625, 2.625, 1, 0.75">
       <personMoniker name="/4b73f606-1129-4473-b32f-ef05305187bd/Alan Gudiev" />
     </exampleShape>
-    <exampleConnector Id="0d0edac9-1e41-4500-945d-ff2b0985eb3c" edgePoints="[(6.10156125 : 2.625); (6.10156125 : 1.34375); (5.14583283333333 : 1.34375 : JumpStart); (4.97916616666667 : 1.34375 : JumpEnd); (4.83333058333333 : 1.34375 : JumpStart); (4.66666391666667 : 1.34375 : JumpEnd); (3 : 1.34375)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="6e9b7214-4cbf-430a-ad02-89badf30079e">
+    <exampleConnector Id="0d0edac9-1e41-4500-945d-ff2b0985eb3c" edgePoints="[(6.10156125 : 2.625); (6.10156125 : 1.34375); (5.14583283333333 : 1.34375 : JumpStart); (4.97916616666667 : 1.34375 : JumpEnd); (4.83333058333333 : 1.34375 : JumpStart); (4.66666391666667 : 1.34375 : JumpEnd); (3 : 1.34375)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="6e9b7214-4cbf-430a-ad02-89badf30079e">
       <nodes>
         <exampleShapeMoniker Id="1803d0b6-f6f8-4761-aeaf-273e4597ede4" />
         <exampleShapeMoniker Id="71013da8-089c-4295-b625-0815cfe4b871" />
       </nodes>
     </exampleConnector>
-    <exampleConnector Id="7a769960-b637-4394-9d13-ad36f95c287a" edgePoints="[(6.4531275 : 2.625); (6.4531275 : 1.703125); (6.75 : 1.703125)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="6e9b7214-4cbf-430a-ad02-89badf30079e">
+    <exampleConnector Id="7a769960-b637-4394-9d13-ad36f95c287a" edgePoints="[(6.4531275 : 2.625); (6.4531275 : 1.703125); (6.75 : 1.703125)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="6e9b7214-4cbf-430a-ad02-89badf30079e">
       <nodes>
         <exampleShapeMoniker Id="1803d0b6-f6f8-4761-aeaf-273e4597ede4" />
         <exampleShapeMoniker Id="1016d3de-f7d1-4b4f-b591-21a9e3774dc3" />
       </nodes>
     </exampleConnector>
-    <exampleConnector Id="a0f5776e-bfa6-4601-b286-8f1633795a7a" edgePoints="[(2.75 : 2.46875); (2.82291666666667 : 2.46875 : JumpStart); (2.98958333333333 : 2.46875 : JumpEnd); (4.97916616666667 : 2.46875 : JumpStart); (5.14583283333333 : 2.46875 : JumpEnd); (6.01822791666667 : 2.46875 : JumpStart); (6.18489458333333 : 2.46875 : JumpEnd); (6.36979416666667 : 2.46875 : JumpStart); (6.53646083333333 : 2.46875 : JumpEnd); (6.85416666666667 : 2.46875 : JumpStart); (7.02083333333333 : 2.46875 : JumpEnd); (7.3125 : 2.46875); (7.3125 : 1.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="6e9b7214-4cbf-430a-ad02-89badf30079e">
+    <exampleConnector Id="a0f5776e-bfa6-4601-b286-8f1633795a7a" edgePoints="[(2.75 : 2.46875); (2.82291666666667 : 2.46875 : JumpStart); (2.98958333333333 : 2.46875 : JumpEnd); (4.97916616666667 : 2.46875 : JumpStart); (5.14583283333333 : 2.46875 : JumpEnd); (6.85416666666667 : 2.46875 : JumpStart); (7.02083333333333 : 2.46875 : JumpEnd); (7.3125 : 2.46875); (7.3125 : 1.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="6e9b7214-4cbf-430a-ad02-89badf30079e">
       <nodes>
         <exampleShapeMoniker Id="cc84058d-a6a6-4ad5-88e9-1a74fe405672" />
         <exampleShapeMoniker Id="1016d3de-f7d1-4b4f-b591-21a9e3774dc3" />
@@ -44,28 +44,28 @@
     <townShape Id="3eaa8b95-4b23-427c-8b83-c3f8df2888f2" absoluteBounds="1.375, 3.625, 1.25, 0.625">
       <townMoniker Id="01249362-0270-4e65-b093-c3b42bd6c5ef" />
     </townShape>
-    <townConnector Id="9d2a0878-47d2-4290-9183-18737f5da15e" edgePoints="[(6.9375 : 3.82957625234377); (6.9375 : 1.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <townConnector Id="9d2a0878-47d2-4290-9183-18737f5da15e" edgePoints="[(6.9375 : 3.82957625234377); (6.9375 : 1.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <residenceMoniker Id="22bd11c6-bea5-40f8-92cc-fe91b02248d5" />
       <nodes>
         <townShapeMoniker Id="3d2344af-3f57-42d2-aae0-b804ad1d0c13" />
         <exampleShapeMoniker Id="1016d3de-f7d1-4b4f-b591-21a9e3774dc3" />
       </nodes>
     </townConnector>
-    <townConnector Id="fac52fb1-fb5d-4c0a-bc1e-5f09bedd5f09" edgePoints="[(6.3125 : 3.78256049485075); (6.3125 : 3.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <townConnector Id="fac52fb1-fb5d-4c0a-bc1e-5f09bedd5f09" edgePoints="[(6.3125 : 3.78256049485075); (6.3125 : 3.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <residenceMoniker Id="3560ad1c-2535-4d4c-98d7-2ad7990b1ab2" />
       <nodes>
         <townShapeMoniker Id="3d2344af-3f57-42d2-aae0-b804ad1d0c13" />
         <exampleShapeMoniker Id="1803d0b6-f6f8-4761-aeaf-273e4597ede4" />
       </nodes>
     </townConnector>
-    <townConnector Id="bfc366ef-2f86-417b-81ff-a55f7f5f5457" edgePoints="[(6.31731193442584 : 4.34375); (2.90625 : 4.34375); (2.90625 : 1.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <townConnector Id="bfc366ef-2f86-417b-81ff-a55f7f5f5457" edgePoints="[(6.31731193442584 : 4.34375); (2.90625 : 4.34375); (2.90625 : 1.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <residenceMoniker Id="e3d49246-068c-4d5c-97e5-8a4c60e299ed" />
       <nodes>
         <townShapeMoniker Id="3d2344af-3f57-42d2-aae0-b804ad1d0c13" />
         <exampleShapeMoniker Id="71013da8-089c-4295-b625-0815cfe4b871" />
       </nodes>
     </townConnector>
-    <townConnector Id="e1c8a0ba-1abd-48bc-b41e-35034af438f8" edgePoints="[(2.0625 : 3.62656642590418); (2.0625 : 3.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <townConnector Id="e1c8a0ba-1abd-48bc-b41e-35034af438f8" edgePoints="[(2.0625 : 3.62656642590418); (2.0625 : 3.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <residenceMoniker Id="1bcf41bb-8390-41f8-b4e1-96997a82d42f" />
       <nodes>
         <townShapeMoniker Id="3eaa8b95-4b23-427c-8b83-c3f8df2888f2" />
@@ -75,28 +75,28 @@
     <nationalityShape Id="666c7d32-392b-4f35-843c-32c1a7701c5f" absoluteBounds="4.5, 0.5, 1.25, 0.75">
       <nationalityMoniker Id="0d226068-3c00-438b-aa9d-b25205c0ec57" />
     </nationalityShape>
-    <nAtionalityConnector Id="998d485e-a913-48e8-9984-65063ec38d14" edgePoints="[(5.0624995 : 1.25); (5.0624995 : 3); (5.625 : 3)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <nAtionalityConnector Id="998d485e-a913-48e8-9984-65063ec38d14" edgePoints="[(5.0624995 : 1.25); (5.0624995 : 3); (5.625 : 3)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <nationalityReferencesPersonsMoniker Id="1946ca27-9c29-4ca0-bac0-0aa008a1fe65" />
       <nodes>
         <nationalityShapeMoniker Id="666c7d32-392b-4f35-843c-32c1a7701c5f" />
         <exampleShapeMoniker Id="1803d0b6-f6f8-4761-aeaf-273e4597ede4" />
       </nodes>
     </nAtionalityConnector>
-    <nAtionalityConnector Id="51f63a47-4fb9-478e-8f4d-7c758193855d" edgePoints="[(4.74999725 : 1.25); (4.74999725 : 2.4374975); (2.98958333333333 : 2.4374975 : JumpStart); (2.82291666666667 : 2.4374975 : JumpEnd); (2.75 : 2.4374975)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <nAtionalityConnector Id="51f63a47-4fb9-478e-8f4d-7c758193855d" edgePoints="[(4.74999725 : 1.25); (4.74999725 : 2.4374975); (2.75 : 2.4374975)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <nationalityReferencesPersonsMoniker Id="a9660de4-cca6-4969-8569-fad4251df880" />
       <nodes>
         <nationalityShapeMoniker Id="666c7d32-392b-4f35-843c-32c1a7701c5f" />
         <exampleShapeMoniker Id="cc84058d-a6a6-4ad5-88e9-1a74fe405672" />
       </nodes>
     </nAtionalityConnector>
-    <nAtionalityConnector Id="f82869e0-414f-44e9-91f1-2072d3a98c63" edgePoints="[(5.75 : 0.8124995); (7.3125 : 0.8124995); (7.3125 : 1.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <nAtionalityConnector Id="f82869e0-414f-44e9-91f1-2072d3a98c63" edgePoints="[(5.75 : 0.8124995); (7.3125 : 0.8124995); (7.3125 : 1.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <nationalityReferencesPersonsMoniker Id="8c0e6ffa-4c95-4a80-abee-33e2b1119942" />
       <nodes>
         <nationalityShapeMoniker Id="666c7d32-392b-4f35-843c-32c1a7701c5f" />
         <exampleShapeMoniker Id="1016d3de-f7d1-4b4f-b591-21a9e3774dc3" />
       </nodes>
     </nAtionalityConnector>
-    <nAtionalityConnector Id="a1ce692d-20b9-456b-9b5c-0bf811385d48" edgePoints="[(4.5 : 0.9375); (3 : 0.9375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <nAtionalityConnector Id="a1ce692d-20b9-456b-9b5c-0bf811385d48" edgePoints="[(4.5 : 0.9375); (3 : 0.9375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <nationalityReferencesPersonsMoniker Id="7c167607-d89c-4c78-b521-fbb856c5f237" />
       <nodes>
         <nationalityShapeMoniker Id="666c7d32-392b-4f35-843c-32c1a7701c5f" />

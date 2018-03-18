@@ -551,6 +551,93 @@ namespace Company.FamilyTree
 		}
 		
 		#endregion
+		#region Male domain property code
+		
+		/// <summary>
+		/// Male domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid MaleDomainPropertyId = new global::System.Guid(0xf954a0aa, 0x20f0, 0x49c6, 0x84, 0x4d, 0xe3, 0x5d, 0xa0, 0x2d, 0x5c, 0x83);
+		
+		/// <summary>
+		/// Storage for Male
+		/// </summary>
+		private global::System.Boolean malePropertyStorage;
+		
+		/// <summary>
+		/// Gets or sets the value of Male domain property.
+		/// Description for Company.FamilyTree.Person.Male
+		/// </summary>
+		[DslDesign::DisplayNameResource("Company.FamilyTree.Person/Male.DisplayName", typeof(global::Company.FamilyTree.FamilyTreeDomainModel), "Company.FamilyTree.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("Company.FamilyTree.Person/Male.Description", typeof(global::Company.FamilyTree.FamilyTreeDomainModel), "Company.FamilyTree.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("f954a0aa-20f0-49c6-844d-e35da02d5c83")]
+		public global::System.Boolean Male
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return malePropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				MalePropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the Person.Male domain property.
+		/// </summary>
+		internal sealed partial class MalePropertyHandler : DslModeling::DomainPropertyValueHandler<Person, global::System.Boolean>
+		{
+			private MalePropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the Person.Male domain property value handler.
+			/// </summary>
+			public static readonly MalePropertyHandler Instance = new MalePropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the Person.Male domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return MaleDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.Boolean GetValue(Person element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.malePropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(Person element, global::System.Boolean newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.Boolean oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.malePropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
 		#region FamilyTreeModel opposite domain role accessor
 		/// <summary>
 		/// Gets or sets FamilyTreeModel.

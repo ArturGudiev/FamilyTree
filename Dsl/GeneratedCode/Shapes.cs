@@ -204,6 +204,14 @@ namespace Company.FamilyTree
 			field3.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
 			shapeFields.Add(field3);
 			
+			DslDiagrams::ImageField field4 = new DslDiagrams::ImageField("FemaleIcon");
+			field4.DefaultImage = DslDiagrams::ImageHelper.GetImage(global::Company.FamilyTree.FamilyTreeDomainModel.SingletonResourceManager.GetObject("ExampleShapeFemaleIconDefaultImage"));
+			shapeFields.Add(field4);
+			
+			DslDiagrams::ImageField field5 = new DslDiagrams::ImageField("MaleIcon");
+			field5.DefaultImage = DslDiagrams::ImageHelper.GetImage(global::Company.FamilyTree.FamilyTreeDomainModel.SingletonResourceManager.GetObject("ExampleShapeMaleIconDefaultImage"));
+			shapeFields.Add(field5);
+			
 		}
 		
 		/// <summary>
@@ -226,6 +234,14 @@ namespace Company.FamilyTree
 			DslDiagrams::ShapeField field3 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "BirthDecorator");
 			DslDiagrams::Decorator decorator3 = new DslDiagrams::ShapeDecorator(field3, DslDiagrams::ShapeDecoratorPosition.InnerBottomLeft, DslDiagrams::PointD.Empty);
 			decorators.Add(decorator3);
+				
+			DslDiagrams::ShapeField field4 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "FemaleIcon");
+			DslDiagrams::Decorator decorator4 = new DslDiagrams::ShapeDecorator(field4, DslDiagrams::ShapeDecoratorPosition.InnerTopRight, DslDiagrams::PointD.Empty);
+			decorators.Add(decorator4);
+				
+			DslDiagrams::ShapeField field5 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "MaleIcon");
+			DslDiagrams::Decorator decorator5 = new DslDiagrams::ShapeDecorator(field5, DslDiagrams::ShapeDecoratorPosition.InnerTopRight, DslDiagrams::PointD.Empty);
+			decorators.Add(decorator5);
 				
 		}
 		

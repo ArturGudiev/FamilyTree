@@ -261,6 +261,14 @@ namespace Company.FamilyTree
 				
 				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::Company.FamilyTree.Person.BirthYearDomainPropertyId);
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "BirthDecorator").AssociateValueWith(shape.Store, propertyInfo);
+		
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::Company.FamilyTree.Person.MaleDomainPropertyId);
+				propertyInfo.FilteringValues.Add("False");
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "FemaleIcon").AssociateVisibilityWith(shape.Store, propertyInfo);
+		
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::Company.FamilyTree.Person.MaleDomainPropertyId);
+				propertyInfo.FilteringValues.Add("True");
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "MaleIcon").AssociateVisibilityWith(shape.Store, propertyInfo);
 			}
 		}
 		
