@@ -14,10 +14,10 @@
         </ElementMergeDirective>
         <ElementMergeDirective>
           <Index>
-            <DomainClassMoniker Name="Town1" />
+            <DomainClassMoniker Name="Town" />
           </Index>
           <LinkCreationPaths>
-            <DomainPath>FamilyTreeModelHasTown1.Town1</DomainPath>
+            <DomainPath>FamilyTreeModelHasTowns.Towns</DomainPath>
           </LinkCreationPaths>
         </ElementMergeDirective>
         <ElementMergeDirective>
@@ -49,9 +49,9 @@
         </DomainProperty>
       </Properties>
     </DomainClass>
-    <DomainClass Id="4eb9e2ce-e785-4b48-8c4d-4e80d9eeb831" Description="Description for Company.FamilyTree.Town1" Name="Town1" DisplayName="Town1" Namespace="Company.FamilyTree">
+    <DomainClass Id="4eb9e2ce-e785-4b48-8c4d-4e80d9eeb831" Description="Description for Company.FamilyTree.Town" Name="Town" DisplayName="Town" Namespace="Company.FamilyTree">
       <Properties>
-        <DomainProperty Id="3e0721e5-e0f5-4cca-b227-488db1e2c9d6" Description="Description for Company.FamilyTree.Town1.Name" Name="Name" DisplayName="Name">
+        <DomainProperty Id="3e0721e5-e0f5-4cca-b227-488db1e2c9d6" Description="Description for Company.FamilyTree.Town.Name" Name="Name" DisplayName="Name">
           <Type>
             <ExternalTypeMoniker Name="/System/String" />
           </Type>
@@ -101,32 +101,32 @@
         </DomainRole>
       </Target>
     </DomainRelationship>
-    <DomainRelationship Id="a541dbe1-3b7e-4d08-817c-398fb7281760" Description="Description for Company.FamilyTree.FamilyTreeModelHasTown1" Name="FamilyTreeModelHasTown1" DisplayName="Family Tree Model Has Town1" Namespace="Company.FamilyTree" IsEmbedding="true">
+    <DomainRelationship Id="a541dbe1-3b7e-4d08-817c-398fb7281760" Description="Description for Company.FamilyTree.FamilyTreeModelHasTowns" Name="FamilyTreeModelHasTowns" DisplayName="Family Tree Model Has Towns" Namespace="Company.FamilyTree" IsEmbedding="true">
       <Source>
-        <DomainRole Id="8a6d92a9-cf70-42d4-9931-d8eaffcfa407" Description="Description for Company.FamilyTree.FamilyTreeModelHasTown1.FamilyTreeModel" Name="FamilyTreeModel" DisplayName="Family Tree Model" PropertyName="Town1" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Town1">
+        <DomainRole Id="8a6d92a9-cf70-42d4-9931-d8eaffcfa407" Description="Description for Company.FamilyTree.FamilyTreeModelHasTowns.FamilyTreeModel" Name="FamilyTreeModel" DisplayName="Family Tree Model" PropertyName="Towns" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Towns">
           <RolePlayer>
             <DomainClassMoniker Name="FamilyTreeModel" />
           </RolePlayer>
         </DomainRole>
       </Source>
       <Target>
-        <DomainRole Id="92a058d5-0a36-47da-9df1-cffe92be1e42" Description="Description for Company.FamilyTree.FamilyTreeModelHasTown1.Town1" Name="Town1" DisplayName="Town1" PropertyName="FamilyTreeModel" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Family Tree Model">
+        <DomainRole Id="92a058d5-0a36-47da-9df1-cffe92be1e42" Description="Description for Company.FamilyTree.FamilyTreeModelHasTowns.Town" Name="Town" DisplayName="Town" PropertyName="FamilyTreeModel" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Family Tree Model">
           <RolePlayer>
-            <DomainClassMoniker Name="Town1" />
+            <DomainClassMoniker Name="Town" />
           </RolePlayer>
         </DomainRole>
       </Target>
     </DomainRelationship>
     <DomainRelationship Id="dbb9973b-a018-4aaf-8806-6176015727ac" Description="Description for Company.FamilyTree.Residence" Name="Residence" DisplayName="Residence" Namespace="Company.FamilyTree">
       <Source>
-        <DomainRole Id="c06b4268-2047-4158-8b01-289168e3ae12" Description="Description for Company.FamilyTree.Residence.Town1" Name="Town1" DisplayName="Town1" PropertyName="Residents" PropertyDisplayName="Residents">
+        <DomainRole Id="c06b4268-2047-4158-8b01-289168e3ae12" Description="Description for Company.FamilyTree.Residence.Town" Name="Town" DisplayName="Town" PropertyName="Residents" PropertyDisplayName="Residents">
           <RolePlayer>
-            <DomainClassMoniker Name="Town1" />
+            <DomainClassMoniker Name="Town" />
           </RolePlayer>
         </DomainRole>
       </Source>
       <Target>
-        <DomainRole Id="4944f110-d564-4c74-91b6-a4fd0b278f66" Description="Description for Company.FamilyTree.Residence.Person" Name="Person" DisplayName="Person" PropertyName="Town1" Multiplicity="ZeroOne" PropertyDisplayName="Town1">
+        <DomainRole Id="4944f110-d564-4c74-91b6-a4fd0b278f66" Description="Description for Company.FamilyTree.Residence.Person" Name="Person" DisplayName="Person" PropertyName="Town" Multiplicity="ZeroOne" PropertyDisplayName="Town">
           <RolePlayer>
             <DomainClassMoniker Name="Person" />
           </RolePlayer>
@@ -220,8 +220,8 @@
           <XmlRelationshipData RoleElementName="people">
             <DomainRelationshipMoniker Name="FamilyTreeModelHasPeople" />
           </XmlRelationshipData>
-          <XmlRelationshipData UseFullForm="true" RoleElementName="town1">
-            <DomainRelationshipMoniker Name="FamilyTreeModelHasTown1" />
+          <XmlRelationshipData UseFullForm="true" RoleElementName="towns">
+            <DomainRelationshipMoniker Name="FamilyTreeModelHasTowns" />
           </XmlRelationshipData>
           <XmlRelationshipData UseFullForm="true" RoleElementName="nationalities">
             <DomainRelationshipMoniker Name="FamilyTreeModelHasNationalities" />
@@ -260,14 +260,14 @@
       <XmlClassData TypeName="FamilyTreeDiagram" MonikerAttributeName="" SerializeId="true" MonikerElementName="familyTreeDiagramMoniker" ElementName="familyTreeDiagram" MonikerTypeName="FamilyTreeDiagramMoniker">
         <DiagramMoniker Name="FamilyTreeDiagram" />
       </XmlClassData>
-      <XmlClassData TypeName="FamilyTreeModelHasTown1" MonikerAttributeName="" SerializeId="true" MonikerElementName="familyTreeModelHasTown1Moniker" ElementName="familyTreeModelHasTown1" MonikerTypeName="FamilyTreeModelHasTown1Moniker">
-        <DomainRelationshipMoniker Name="FamilyTreeModelHasTown1" />
+      <XmlClassData TypeName="FamilyTreeModelHasTowns" MonikerAttributeName="" SerializeId="true" MonikerElementName="familyTreeModelHasTownsMoniker" ElementName="familyTreeModelHasTowns" MonikerTypeName="FamilyTreeModelHasTownsMoniker">
+        <DomainRelationshipMoniker Name="FamilyTreeModelHasTowns" />
       </XmlClassData>
-      <XmlClassData TypeName="Town1" MonikerAttributeName="" SerializeId="true" MonikerElementName="town1Moniker" ElementName="town1" MonikerTypeName="Town1Moniker">
-        <DomainClassMoniker Name="Town1" />
+      <XmlClassData TypeName="Town" MonikerAttributeName="" SerializeId="true" MonikerElementName="townMoniker" ElementName="town" MonikerTypeName="TownMoniker">
+        <DomainClassMoniker Name="Town" />
         <ElementData>
           <XmlPropertyData XmlName="name">
-            <DomainPropertyMoniker Name="Town1/Name" />
+            <DomainPropertyMoniker Name="Town/Name" />
           </XmlPropertyData>
           <XmlRelationshipData UseFullForm="true" RoleElementName="residents">
             <DomainRelationshipMoniker Name="Residence" />
@@ -336,7 +336,7 @@
         <SourceDirectives>
           <RolePlayerConnectDirective>
             <AcceptingClass>
-              <DomainClassMoniker Name="Town1" />
+              <DomainClassMoniker Name="Town" />
             </AcceptingClass>
           </RolePlayerConnectDirective>
         </SourceDirectives>
@@ -406,15 +406,15 @@
         <GeometryShapeMoniker Name="ExampleShape" />
       </ShapeMap>
       <ShapeMap>
-        <DomainClassMoniker Name="Town1" />
+        <DomainClassMoniker Name="Town" />
         <ParentElementPath>
-          <DomainPath>FamilyTreeModelHasTown1.FamilyTreeModel/!FamilyTreeModel</DomainPath>
+          <DomainPath>FamilyTreeModelHasTowns.FamilyTreeModel/!FamilyTreeModel</DomainPath>
         </ParentElementPath>
         <DecoratorMap>
           <TextDecoratorMoniker Name="TownShape/NameDecorator" />
           <PropertyDisplayed>
             <PropertyPath>
-              <DomainPropertyMoniker Name="Town1/Name" />
+              <DomainPropertyMoniker Name="Town/Name" />
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>
@@ -466,7 +466,7 @@
         <ConnectionBuilderMoniker Name="FamilyTree/PersonReferencesChildrenBuilder" />
       </ConnectionTool>
       <ElementTool Name="TownTool" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="TownTool" Tooltip="Town Tool" HelpKeyword="TownTool">
-        <DomainClassMoniker Name="Town1" />
+        <DomainClassMoniker Name="Town" />
       </ElementTool>
       <ConnectionTool Name="ResidenceConnection" ToolboxIcon="resources\exampleconnectortoolbitmap.bmp" Caption="ResidenceConnection" Tooltip="Residence Connection" HelpKeyword="ResidenceConnection">
         <ConnectionBuilderMoniker Name="FamilyTree/ResidenceBuilder" />

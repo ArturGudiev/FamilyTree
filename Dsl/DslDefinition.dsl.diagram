@@ -19,7 +19,7 @@
           </nestedChildShapes>
         </microsoft.VisualStudio.Modeling.DslDesigner.RelationshipShape>
         <microsoft.VisualStudio.Modeling.DslDesigner.RelationshipShape Id="7ae3ff83-5a0c-41e5-8477-3a22606b045e" isExpanded="false" absoluteBounds="1.6, 3.86568359375, 1.35, 0.25">
-          <DomainRelationshipMoniker Name="/Company.FamilyTree/FamilyTreeModelHasTown1" />
+          <DomainRelationshipMoniker Name="/Company.FamilyTree/FamilyTreeModelHasTowns" />
           <relativeChildShapes />
           <nestedChildShapes>
             <elementListCompartment Id="a0c630b6-340c-40ea-b867-6c45466c24dc" absoluteBounds="1.6, 3.86568359375, 0.125, 0.2493896484375" name="Properties" titleTextColor="Black" itemTextColor="Black" />
@@ -299,12 +299,12 @@
             </SourceRoleNode>
             <SourceRoleNode Id="1630cd87-759f-4883-960f-db8260f361ef">
               <Role>
-                <DomainRoleMoniker Name="/Company.FamilyTree/FamilyTreeModelHasTown1/FamilyTreeModel" />
+                <DomainRoleMoniker Name="/Company.FamilyTree/FamilyTreeModelHasTowns/FamilyTreeModel" />
               </Role>
             </SourceRoleNode>
             <SourceRoleNode Id="c89d5f5b-1f3f-4f7d-a224-0500b1b8b819" IsLeaf="true">
               <Role>
-                <DomainRoleMoniker Name="/Company.FamilyTree/Residence/Town1" />
+                <DomainRoleMoniker Name="/Company.FamilyTree/Residence/Town" />
               </Role>
             </SourceRoleNode>
             <SourceRoleNode Id="d84ef3ef-0214-4763-9202-97beaf6c04a9">
