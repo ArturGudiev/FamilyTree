@@ -52,6 +52,11 @@
             <ExternalTypeMoniker Name="/System/Boolean" />
           </Type>
         </DomainProperty>
+        <DomainProperty Id="9a8a82fb-1116-4344-8f55-0927d4617015" Description="Description for Company.FamilyTree.Person.Decorator Control" Name="DecoratorControl" DisplayName="Decorator Control" Kind="Calculated" IsBrowsable="false">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Boolean" />
+          </Type>
+        </DomainProperty>
       </Properties>
     </DomainClass>
     <DomainClass Id="4eb9e2ce-e785-4b48-8c4d-4e80d9eeb831" Description="Description for Company.FamilyTree.Town" Name="Town" DisplayName="Town" Namespace="Company.FamilyTree">
@@ -206,6 +211,9 @@
       <ShapeHasDecorators Position="InnerTopRight" HorizontalOffset="0" VerticalOffset="0">
         <IconDecorator Name="MaleIcon" DisplayName="Male Icon" DefaultIcon="Resources\gender.bmp" />
       </ShapeHasDecorators>
+      <ShapeHasDecorators Position="InnerMiddleRight" HorizontalOffset="0" VerticalOffset="0">
+        <IconDecorator Name="NewMaleIcon" DisplayName="New Male Icon" DefaultIcon="Resources\gender.bmp" />
+      </ShapeHasDecorators>
     </GeometryShape>
     <GeometryShape Id="9e12eae0-2fd1-4fe9-b975-32b01ff4b84b" Description="Description for Company.FamilyTree.TownShape" Name="TownShape" DisplayName="Town Shape" Namespace="Company.FamilyTree" FixedTooltipText="Town Shape" FillColor="Red" InitialHeight="1" Geometry="Ellipse">
       <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
@@ -256,6 +264,9 @@
           </XmlPropertyData>
           <XmlPropertyData XmlName="male">
             <DomainPropertyMoniker Name="Person/Male" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="decoratorControl" Representation="Ignore">
+            <DomainPropertyMoniker Name="Person/DecoratorControl" />
           </XmlPropertyData>
         </ElementData>
       </XmlClassData>
@@ -430,6 +441,15 @@
           <IconDecoratorMoniker Name="ExampleShape/MaleIcon" />
           <VisibilityPropertyPath>
             <DomainPropertyMoniker Name="Person/Male" />
+            <PropertyFilters>
+              <PropertyFilter FilteringValue="True" />
+            </PropertyFilters>
+          </VisibilityPropertyPath>
+        </DecoratorMap>
+        <DecoratorMap>
+          <IconDecoratorMoniker Name="ExampleShape/NewMaleIcon" />
+          <VisibilityPropertyPath>
+            <DomainPropertyMoniker Name="Person/DecoratorControl" />
             <PropertyFilters>
               <PropertyFilter FilteringValue="True" />
             </PropertyFilters>

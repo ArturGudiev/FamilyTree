@@ -173,6 +173,14 @@
     <value>Male</value>
     <comment>DisplayName for DomainProperty &apos;Male&apos; on DomainClass &apos;Person&apos;</comment>
   </data>
+  <data name="Company.FamilyTree.Person/DecoratorControl.Description" xml:space="preserve">
+    <value>Description for Company.FamilyTree.Person.Decorator Control</value>
+    <comment>Description for DomainProperty &apos;DecoratorControl&apos; on DomainClass &apos;Person&apos;</comment>
+  </data>
+  <data name="Company.FamilyTree.Person/DecoratorControl.DisplayName" xml:space="preserve">
+    <value>Decorator Control</value>
+    <comment>DisplayName for DomainProperty &apos;DecoratorControl&apos; on DomainClass &apos;Person&apos;</comment>
+  </data>
   <data name="Company.FamilyTree.Town.Description" xml:space="preserve">
     <value>Description for Company.FamilyTree.Town</value>
     <comment>Description for DomainClass &apos;Town&apos;</comment>
@@ -663,6 +671,10 @@ A DomainClass can be serialized as a moniker only if
     <comment>Icon decorator default image</comment>
   </data>
   <data name="ExampleShapeMaleIconDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\gender.bmp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Icon decorator default image</comment>
+  </data>
+  <data name="ExampleShapeNewMaleIconDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
     <value>..\Resources\gender.bmp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Icon decorator default image</comment>
   </data>

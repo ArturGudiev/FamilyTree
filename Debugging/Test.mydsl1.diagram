@@ -5,10 +5,10 @@
     <exampleShape Id="71013da8-089c-4295-b625-0815cfe4b871" absoluteBounds="1.75, 0.625, 1.25, 0.75">
       <personMoniker name="/4b73f606-1129-4473-b32f-ef05305187bd/Laura Gudiev" />
     </exampleShape>
-    <exampleShape Id="cc84058d-a6a6-4ad5-88e9-1a74fe405672" absoluteBounds="1.5, 2.375, 1.25, 0.75">
+    <exampleShape Id="cc84058d-a6a6-4ad5-88e9-1a74fe405672" absoluteBounds="1.375, 2.125, 1.25, 0.75">
       <personMoniker name="/4b73f606-1129-4473-b32f-ef05305187bd/Artur Gudiev" />
     </exampleShape>
-    <exampleConnector Id="82eeb328-7cc9-4fe2-912b-5d3a9c977b6d" edgePoints="[(2.25 : 2.375); (2.25 : 1.375)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="6e9b7214-4cbf-430a-ad02-89badf30079e">
+    <exampleConnector Id="82eeb328-7cc9-4fe2-912b-5d3a9c977b6d" edgePoints="[(2.1875 : 2.125); (2.1875 : 1.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="6e9b7214-4cbf-430a-ad02-89badf30079e">
       <nodes>
         <exampleShapeMoniker Id="cc84058d-a6a6-4ad5-88e9-1a74fe405672" />
         <exampleShapeMoniker Id="71013da8-089c-4295-b625-0815cfe4b871" />
@@ -20,7 +20,7 @@
     <exampleShape Id="1803d0b6-f6f8-4761-aeaf-273e4597ede4" absoluteBounds="5.625, 2.625, 1, 0.75">
       <personMoniker name="/4b73f606-1129-4473-b32f-ef05305187bd/Alan Gudiev" />
     </exampleShape>
-    <exampleConnector Id="0d0edac9-1e41-4500-945d-ff2b0985eb3c" edgePoints="[(6.10156125 : 2.625); (6.10156125 : 1.34375); (5.14583283333333 : 1.34375 : JumpStart); (4.97916616666667 : 1.34375 : JumpEnd); (4.83333058333333 : 1.34375 : JumpStart); (4.66666391666667 : 1.34375 : JumpEnd); (3 : 1.34375)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="6e9b7214-4cbf-430a-ad02-89badf30079e">
+    <exampleConnector Id="0d0edac9-1e41-4500-945d-ff2b0985eb3c" edgePoints="[(6.10156125 : 2.625); (6.10156125 : 1.34375); (5.14583283333333 : 1.34375 : JumpStart); (4.97916616666667 : 1.34375 : JumpEnd); (4.83333058333333 : 1.34375 : JumpStart); (4.66666391666667 : 1.34375 : JumpEnd); (3 : 1.34375)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="6e9b7214-4cbf-430a-ad02-89badf30079e">
       <nodes>
         <exampleShapeMoniker Id="1803d0b6-f6f8-4761-aeaf-273e4597ede4" />
         <exampleShapeMoniker Id="71013da8-089c-4295-b625-0815cfe4b871" />
@@ -32,7 +32,7 @@
         <exampleShapeMoniker Id="1016d3de-f7d1-4b4f-b591-21a9e3774dc3" />
       </nodes>
     </exampleConnector>
-    <exampleConnector Id="a0f5776e-bfa6-4601-b286-8f1633795a7a" edgePoints="[(2.75 : 2.46875); (2.82291666666667 : 2.46875 : JumpStart); (2.98958333333333 : 2.46875 : JumpEnd); (4.97916616666667 : 2.46875 : JumpStart); (5.14583283333333 : 2.46875 : JumpEnd); (6.85416666666667 : 2.46875 : JumpStart); (7.02083333333333 : 2.46875 : JumpEnd); (7.3125 : 2.46875); (7.3125 : 1.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="6e9b7214-4cbf-430a-ad02-89badf30079e">
+    <exampleConnector Id="a0f5776e-bfa6-4601-b286-8f1633795a7a" edgePoints="[(2.625 : 2.34375); (2.76041666666667 : 2.34375 : JumpStart); (2.92708333333333 : 2.34375 : JumpEnd); (4.97916616666667 : 2.34375 : JumpStart); (5.14583283333333 : 2.34375 : JumpEnd); (6.01822791666667 : 2.34375 : JumpStart); (6.18489458333333 : 2.34375 : JumpEnd); (6.36979416666667 : 2.34375 : JumpStart); (6.53646083333333 : 2.34375 : JumpEnd); (6.85416666666667 : 2.34375 : JumpStart); (7.02083333333333 : 2.34375 : JumpEnd); (7.4375025 : 2.34375); (7.4375025 : 1.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="6e9b7214-4cbf-430a-ad02-89badf30079e">
       <nodes>
         <exampleShapeMoniker Id="cc84058d-a6a6-4ad5-88e9-1a74fe405672" />
         <exampleShapeMoniker Id="1016d3de-f7d1-4b4f-b591-21a9e3774dc3" />
@@ -58,14 +58,14 @@
         <exampleShapeMoniker Id="1803d0b6-f6f8-4761-aeaf-273e4597ede4" />
       </nodes>
     </townConnector>
-    <townConnector Id="bfc366ef-2f86-417b-81ff-a55f7f5f5457" edgePoints="[(6.31731193442584 : 4.34375); (2.90625 : 4.34375); (2.90625 : 1.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <townConnector Id="bfc366ef-2f86-417b-81ff-a55f7f5f5457" edgePoints="[(6.31731193442584 : 4.34375); (2.84375 : 4.34375); (2.84375 : 1.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <residenceMoniker Id="e3d49246-068c-4d5c-97e5-8a4c60e299ed" />
       <nodes>
         <townShapeMoniker Id="3d2344af-3f57-42d2-aae0-b804ad1d0c13" />
         <exampleShapeMoniker Id="71013da8-089c-4295-b625-0815cfe4b871" />
       </nodes>
     </townConnector>
-    <townConnector Id="e1c8a0ba-1abd-48bc-b41e-35034af438f8" edgePoints="[(2.0625 : 3.62656642590418); (2.0625 : 3.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <townConnector Id="e1c8a0ba-1abd-48bc-b41e-35034af438f8" edgePoints="[(2 : 3.625); (2 : 2.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <residenceMoniker Id="1bcf41bb-8390-41f8-b4e1-96997a82d42f" />
       <nodes>
         <townShapeMoniker Id="3eaa8b95-4b23-427c-8b83-c3f8df2888f2" />
@@ -82,7 +82,7 @@
         <exampleShapeMoniker Id="1803d0b6-f6f8-4761-aeaf-273e4597ede4" />
       </nodes>
     </nAtionalityConnector>
-    <nAtionalityConnector Id="51f63a47-4fb9-478e-8f4d-7c758193855d" edgePoints="[(4.74999725 : 1.25); (4.74999725 : 2.4374975); (2.75 : 2.4374975)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <nAtionalityConnector Id="51f63a47-4fb9-478e-8f4d-7c758193855d" edgePoints="[(4.74999725 : 1.25); (4.74999725 : 2.2031225); (2.92708333333333 : 2.2031225 : JumpStart); (2.76041666666667 : 2.2031225 : JumpEnd); (2.625 : 2.2031225)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <nationalityReferencesPersonsMoniker Id="a9660de4-cca6-4969-8569-fad4251df880" />
       <nodes>
         <nationalityShapeMoniker Id="666c7d32-392b-4f35-843c-32c1a7701c5f" />

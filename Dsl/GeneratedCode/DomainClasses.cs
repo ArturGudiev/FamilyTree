@@ -638,6 +638,72 @@ namespace Company.FamilyTree
 		}
 		
 		#endregion
+		#region DecoratorControl domain property code
+		
+		/// <summary>
+		/// DecoratorControl domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid DecoratorControlDomainPropertyId = new global::System.Guid(0x9a8a82fb, 0x1116, 0x4344, 0x8f, 0x55, 0x09, 0x27, 0xd4, 0x61, 0x70, 0x15);
+		
+		/// <summary>
+		/// Gets or sets the value of DecoratorControl domain property.
+		/// Description for Company.FamilyTree.Person.Decorator Control
+		/// </summary>
+		[DslDesign::DisplayNameResource("Company.FamilyTree.Person/DecoratorControl.DisplayName", typeof(global::Company.FamilyTree.FamilyTreeDomainModel), "Company.FamilyTree.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("Company.FamilyTree.Person/DecoratorControl.Description", typeof(global::Company.FamilyTree.FamilyTreeDomainModel), "Company.FamilyTree.GeneratedCode.DomainModelResx")]
+		[global::System.ComponentModel.Browsable(false)]
+		[global::System.ComponentModel.ReadOnly(true)]
+		[DslModeling::DomainProperty(Kind = DslModeling::DomainPropertyKind.Calculated)]
+		[DslModeling::DomainObjectId("9a8a82fb-1116-4344-8f55-0927d4617015")]
+		public global::System.Boolean DecoratorControl
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return DecoratorControlPropertyHandler.Instance.GetValue(this);
+			}
+		}
+		/// <summary>
+		/// Value handler for the Person.DecoratorControl domain property.
+		/// </summary>
+		internal sealed partial class DecoratorControlPropertyHandler : DslModeling::CalculatedPropertyValueHandler<Person, global::System.Boolean>
+		{
+			private DecoratorControlPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the Person.DecoratorControl domain property value handler.
+			/// </summary>
+			public static readonly DecoratorControlPropertyHandler Instance = new DecoratorControlPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the Person.DecoratorControl domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return DecoratorControlDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.Boolean GetValue(Person element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				// There is no storage for DecoratorControl because its Kind is
+				// set to Calculated. Please provide the GetDecoratorControlValue()
+				// method on the domain class.
+				return element.GetDecoratorControlValue();
+			}
+		
+		}
+		
+		#endregion
 		#region FamilyTreeModel opposite domain role accessor
 		/// <summary>
 		/// Gets or sets FamilyTreeModel.

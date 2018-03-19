@@ -269,6 +269,10 @@ namespace Company.FamilyTree
 				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::Company.FamilyTree.Person.MaleDomainPropertyId);
 				propertyInfo.FilteringValues.Add("True");
 				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "MaleIcon").AssociateVisibilityWith(shape.Store, propertyInfo);
+		
+				propertyInfo = new DslDiagrams::AssociatedPropertyInfo(global::Company.FamilyTree.Person.DecoratorControlDomainPropertyId);
+				propertyInfo.FilteringValues.Add("True");
+				DslDiagrams::ShapeElement.FindDecorator(shape.Decorators, "NewMaleIcon").AssociateVisibilityWith(shape.Store, propertyInfo);
 			}
 		}
 		
